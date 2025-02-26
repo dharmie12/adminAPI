@@ -7,11 +7,11 @@ urlpatterns = [
     
 ]"""
 
-from django.contrib import blogposts
+from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
-    path("blogposts/", blogposts.site.urls),
+    path("admin/", admin.site.urls),
     path("", include("myapp.urls")),  # Link to app URLs
 ]
 
